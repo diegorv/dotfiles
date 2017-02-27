@@ -50,7 +50,6 @@ brew 'elixir'
 # MAS
 brew 'mas'
 
-mas 'Xcode', id: 497799835
 mas '1Password', id: 443987910
 mas 'Evernote', id: 406056744
 mas 'Amphetamine', id: 937984704
