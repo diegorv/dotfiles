@@ -10,6 +10,6 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 ln -s ${DOTFILES_FILES}/.zshrc ~/.zshrc
 
 # Install default theme
-mkdir ~/.oh-my-zsh/custom/themes/
+mkdir -p ~/.oh-my-zsh/custom/themes/
 ln -s ${DOTFILES_FILES}/diegorv.zsh-theme ~/.oh-my-zsh/custom/themes/diegorv.zsh-theme
 
