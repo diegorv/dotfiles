@@ -8,7 +8,7 @@
 brew update
 
 # Copy dotfiles Brewfile to Home
-ln -s ${DOTFILES_FILES}/.Brewfile ~/.Brewfile
+ln -s ${DOTFILES_FILES}/Brewfile ~/.Brewfile
 
 # Install from local Brewfile
 brew bundle --global
