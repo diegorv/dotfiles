@@ -48,10 +48,21 @@ brew 'elixir'
 
 # MAS
 brew 'mas'
-mas 'Tweetbot', id: 557168941
+
+mas '1Password', id: 443987910
+mas 'Evernote', id: 406056744
+mas 'Amphetamine', id: 937984704
 mas 'Annotate', id: 918207447
+mas 'Monosnap', id: 540348655
+mas 'Sip', id: 507257563
+mas 'Transmit', id: 403388562
+mas 'Tweetbot', id: 557168941
 mas 'iA Writer', id: 775737590
 mas 'Keynote', id: 409183694
+mas 'Slack', id: 803453959
+mas 'Moom', id: 419330170
+mas 'Cinch', id: 412529613
+mas 'DaisyDisk', id: 411643860
 
 # CASK
 tap 'caskroom/cask'
@@ -62,7 +73,19 @@ cask 'docker'
 cask 'dropbox'
 cask 'firefox'
 cask 'google-chrome'
+cask 'blisk'
 cask 'gpgtools'
 cask 'imageoptim'
 cask 'iterm2'
 cask 'virtualbox'
+cask 'istat-menus'
+cask 'bartender'
+cask 'boom'
+cask 'rescuetime'
+cask 'pritunl'
+cask 'dash'
+cask 'postman'
+cask 'tower'
+cask 'spotify'
+cask 'franz'
+cask 'onyx'
