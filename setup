@@ -20,4 +20,5 @@ ${DOTFILES_INSTALLER}/shell
 ${DOTFILES_INSTALLER}/git
 
 # Copy binaries to ~/local/bin
-cp -R ${DOTFILES}/bin $HOME/local
+cp -R $DOTFILES_FILES/bin $HOME/local
+find $HOME/local/bin -type f -exec chmod +x {} \;

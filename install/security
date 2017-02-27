@@ -13,6 +13,9 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow \
     LoginwindowText \
     "Found this computer? Please contact $GIT_NAME ($GITHUB_USER) at $GIT_EMAIL."
 
+# Empty Trash securely by default
+defaults write com.apple.finder EmptyTrashSecurely -bool true
+
 # Enables the macOS screensaver password immediately (for better security)
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
