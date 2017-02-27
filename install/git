@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [[ "$(git config --get user.name)" != "$GIT_NAME" ]]; then
+  git config --global user.name "$GIT_NAME"
+  git config --global user.email "$GIT_EMAIL"
+fi
+
+git config --global core.excludesfile ~/.gitignore
+git config --global commit.gpgsign true

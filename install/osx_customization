@@ -1,0 +1,78 @@
+#!/usr/bin/env bash
+
+###############################################################################
+# OS X
+###############################################################################
+
+# Disable system-wide resume
+defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
+
+# Turn off keyboard illumination when computer is not used for 30 seconds"
+defaults write com.apple.BezelServices kDimTime -int 30
+
+# Make cursor faster
+defaults write -g InitialKeyRepeat -int 15
+defaults write -g KeyRepeat -int 0.02
+
+# Disable auto-correct
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
+# Disable dashboard widgets (saves RAM)
+defaults write com.apple.dashboard mcx-disabled -boolean YES
+
+###############################################################################
+# Safari
+###############################################################################
+
+# Enabling Safari's debug menu
+defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
+
+# Show the full URL in the address bar (note: this still hides the scheme)
+defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
+
+# Set Safari’s home page to `about:blank` for faster loading
+defaults write com.apple.Safari HomePage -string ""
+
+###############################################################################
+# Finder
+###############################################################################
+
+# Show status bar.
+defaults write com.apple.finder ShowStatusBar -boolean true
+
+# Show Path bar in Finder"
+defaults write com.apple.finder ShowPathbar -bool true
+
+# Use list view in all Finder windows by default
+defaults write com.apple.finder FXPreferredViewStyle Nlsv
+
+# Avoid creation of .DS_Store files on network volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+# Show all filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Use current directory as default search scope in Finder
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+
+# Show hidden files:
+defaults write com.apple.finder AppleShowAllFiles TRUE
+
+###############################################################################
+# Dock
+###############################################################################
+
+# Show indicator lights for open applications in the Dock
+defaults write com.apple.dock show-process-indicators -bool true
+
+# Set the icon size of Dock items to 48 pixels
+defaults write com.apple.dock tilesize -int 36
+
+###############################################################################
+# Kill affected applications
+###############################################################################
+
+for app in Safari Finder Dock SystemUIServer
+do
+  killall "$app" >/dev/null 2>&1
+done

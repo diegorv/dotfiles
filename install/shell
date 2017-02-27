@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Change my shell to zsh
+chsh -s $(type -ap zsh | grep $(brew --prefix))
+
+# Copy my ZSH config
+ln -s ${DOTFILES_FILES}/.zshrc ~/.zshrc

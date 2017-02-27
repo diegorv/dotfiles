@@ -1,0 +1,45 @@
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+  ui = true
+[color "diff"]
+  commit = yellow
+  frag = cyan reverse
+  meta = black
+  new = green
+  old = red
+  plain = black
+  whitespace = normal red
+[alias]
+  b = branch
+  ca = commit --amend
+  ci = commit
+  co = checkout
+  dw = diff --word-diff
+  fl = log -p
+  lg = log --oneline --decorate
+  sb = status -sb
+  sh = !git-sh
+  st = status
+  who = shortlog -s --
+[help]
+  autocorrect = 1
+[branch]
+  autosetuprebase = always
+[push]
+  default = current
+[commit]
+  template = ~/.gitmessage
+[core]
+  excludesfile = ~/.gitignore
+  attributesfile = ~/.gitattributes
+	editor = subl -n -w
+[merge]
+  ff = only
+[fetch]
+  prune = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
