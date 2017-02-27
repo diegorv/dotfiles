@@ -9,3 +9,6 @@ touch ~/.irb-history
 # RBenv installs
 rbenv install 2.3.0
 rbenv install 2.4.0
+
+# RBenv default version
+rbenv global 2.3.0
