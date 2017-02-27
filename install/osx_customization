@@ -15,7 +15,7 @@ sudo launchctl load /System/Library/LaunchDaemons/com.apple.alf.agent.plist 2>/d
 # Adds a Found this computer? message to the login screen (for machine recovery)
 sudo defaults write /Library/Preferences/com.apple.loginwindow \
     LoginwindowText \
-    "Found this computer? Please contact $GIT_NAME ($GITHUB_USER) at $GIT_EMAIL."
+    "Found this computer? Please contact $GIT_NAME '$GITHUB_USER' at $GIT_EMAIL."
 
 # Empty Trash securely by default
 defaults write com.apple.finder EmptyTrashSecurely -bool true
