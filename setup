@@ -6,9 +6,9 @@ export DOTFILES_INSTALLER="${DOTFILES}/install"
 export DOTFILES_FILES="${DOTFILES}/files"
 
 # Git vars
-GIT_NAME=''
-GIT_EMAIL=''
-GITHUB_USER=''
+export GIT_NAME=''
+export GIT_EMAIL=''
+export GITHUB_USER=''
 
 # Run installers
 ${DOTFILES_INSTALLER}/osx_update
