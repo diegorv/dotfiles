@@ -5,19 +5,17 @@ export DOTFILES="${HOME}/.dotfiles"
 export DOTFILES_INSTALLER="${DOTFILES}/install"
 export DOTFILES_FILES="${DOTFILES}/files"
 
-# Git vars
-export GIT_NAME=''
-export GIT_EMAIL=''
-export GITHUB_USER=''
-
 # Run installers
-${DOTFILES_INSTALLER}/osx_update
-${DOTFILES_INSTALLER}/osx_customization
-${DOTFILES_INSTALLER}/security
 ${DOTFILES_INSTALLER}/default_files
+${DOTFILES_INSTALLER}/git
+
+${DOTFILES_INSTALLER}/osx_update
+
+${DOTFILES_INSTALLER}/security
+${DOTFILES_INSTALLER}/osx_customization
+
 ${DOTFILES_INSTALLER}/brew
 ${DOTFILES_INSTALLER}/shell
-${DOTFILES_INSTALLER}/git
 
 # Copy binaries to ~/local/bin
 cp -R $DOTFILES_FILES/bin $HOME/local
