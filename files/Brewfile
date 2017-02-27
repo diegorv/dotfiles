@@ -7,27 +7,28 @@ tap 'homebrew/versions'
 
 brew 'readline'
 brew 'ack'
-brew 'bash-completion'
-brew 'bash'
 
+brew 'bash'
+brew 'bash-completion'
 brew 'zsh'
 brew 'zsh-completions'
 
 brew 'git'
 brew 'htop'
 brew 'wget'
-brew 'mitmproxy'
 brew 'masscan'
 brew 'nmap'
+brew 'mitmproxy'
 brew 'ssh-copy-id'
 
 brew 'rbenv'
 brew 'ruby-build'
-brew 'phantomjs'
 
 brew 'nodenv'
 brew 'node-build'
 brew 'yarn'
+
+brew 'phantomjs'
 
 brew 'webp'
 brew 'gifsicle'
