@@ -2,7 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # ZSH Theme
-ZSH_THEME="diegorv-zsh-theme/diegorv"
+ZSH_THEME="diegorv"
 
 # ZSH Plugins
 plugins=(git sublime git-prompt rails last-working-dir)

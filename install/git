@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# Create symbolic link to default files
+ln -s ${DOTFILES_FILES}/.gitconfig ~/.gitconfig
+ln -s ${DOTFILES_FILES}/.gitignore ~/.gitignore
+
 # Set Git user and email
 git config --global user.name "$GIT_NAME"
 git config --global user.email "$GIT_EMAIL"

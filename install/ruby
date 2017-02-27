@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# Create symbolic link to default files
+ln -s ${DOTFILES_FILES}/.gemrc ~/.gemrc
+
+# Create default file to irb history
+touch ~/.irb-history
+
+# RBenv installs
+rbenv install 2.3.0
+rbenv install 2.4.0
