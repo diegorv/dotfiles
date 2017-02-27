@@ -10,8 +10,6 @@ ${DOTFILES_INSTALLER}/default_files
 ${DOTFILES_INSTALLER}/git
 
 ${DOTFILES_INSTALLER}/osx_update
-
-${DOTFILES_INSTALLER}/security
 ${DOTFILES_INSTALLER}/osx_customization
 
 ${DOTFILES_INSTALLER}/brew
