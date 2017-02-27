@@ -6,6 +6,7 @@ export DOTFILES_INSTALLER="${DOTFILES}/install"
 export DOTFILES_FILES="${DOTFILES}/files"
 
 # Run installers
+${DOTFILES_INSTALLER}/my_variables
 ${DOTFILES_INSTALLER}/default_files
 ${DOTFILES_INSTALLER}/git
 

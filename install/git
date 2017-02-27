@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
 
-# Git vars
-export GIT_NAME=''
-export GIT_EMAIL=''
-export GITHUB_USER=''
-
 # Set Git user and email
 git config --global user.name "$GIT_NAME"
 git config --global user.email "$GIT_EMAIL"
