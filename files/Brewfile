@@ -1,0 +1,68 @@
+# Brew
+tap 'homebrew/bundle'
+tap 'homebrew/completions'
+tap 'homebrew/core'
+tap 'homebrew/services'
+tap 'homebrew/versions'
+
+brew 'readline'
+brew 'ack'
+brew 'bash-completion'
+brew 'bash'
+
+brew 'zsh'
+brew 'zsh-completions'
+
+brew 'git'
+brew 'htop'
+brew 'wget'
+brew 'mitmproxy'
+brew 'masscan'
+brew 'nmap'
+brew 'ssh-copy-id'
+
+brew 'rbenv'
+brew 'ruby-build'
+brew 'phantomjs'
+
+brew 'nodenv'
+brew 'node-build'
+brew 'yarn'
+
+brew 'webp'
+brew 'gifsicle'
+brew 'ffmpeg', args: ['with-fontconfig', 'without-lame', 'without-qtkit', 'without-x264', 'without-xvid']
+brew 'librsvg'
+brew 'imagemagick', args: ['with-fontconfig', 'with-librsvg', 'with-webp']
+brew 'libpng'
+brew 'freetype'
+brew 'fontconfig'
+brew 'jpeg'
+brew 'libtiff'
+
+tap 'puma/puma'
+brew 'puma/puma/puma-dev'
+
+brew 'erlang'
+brew 'elixir'
+
+# MAS
+brew 'mas'
+mas 'Tweetbot', id: 557168941
+mas 'Annotate', id: 918207447
+mas 'iA Writer', id: 775737590
+mas 'Keynote', id: 409183694
+
+# CASK
+tap 'caskroom/cask'
+brew 'brew-cask-completion'
+
+cask 'alfred'
+cask 'docker'
+cask 'dropbox'
+cask 'firefox'
+cask 'google-chrome'
+cask 'gpgtools'
+cask 'imageoptim'
+cask 'iterm2'
+cask 'virtualbox'

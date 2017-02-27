@@ -7,14 +7,6 @@
 # Update Homebrew.
 brew update
 
-# Install Homebrew Bundle, Cask, Services and Versions tap.
-brew bundle --file=- <<EOF
-tap 'caskroom/cask'
-tap 'homebrew/core'
-tap 'homebrew/services'
-tap 'homebrew/versions'
-EOF
-
 # Copy dotfiles Brewfile to Home
 ln -s ${DOTFILES_FILES}/.Brewfile ~/.Brewfile
 
