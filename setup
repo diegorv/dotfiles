@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 
-export DOTFILES=$(pwd)
-
-#export DOTFILES="${HOME}/.dotfiles"
+# Dotfiles vars
+export DOTFILES="${HOME}/.dotfiles"
 export DOTFILES_INSTALLER="${DOTFILES}/install"
 export DOTFILES_FILES="${DOTFILES}/files"
 
-GIT_NAME='' # Diego Rossini Vieira
-GIT_EMAIL='' # eu@diegorv.com
-GITHUB_USER='' # diegorv
+# Git vars
+GIT_NAME=''
+GIT_EMAIL=''
+GITHUB_USER=''
 
 # Run installers
 ${DOTFILES_INSTALLER}/osx_update
@@ -20,4 +20,4 @@ ${DOTFILES_INSTALLER}/shell
 ${DOTFILES_INSTALLER}/git
 
 # Copy binaries to ~/local/bin
-#cp -R ${cwd}/bin $HOME/local
+cp -R ${DOTFILES}/bin $HOME/local
