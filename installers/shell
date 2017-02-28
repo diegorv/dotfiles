@@ -12,6 +12,9 @@ print_question 'Shell configurations...\n'
 # Change my shell to zsh
 chsh -s /bin/zsh
 
+# Copy binaries to ~/local/bin
+cp -R ${DOTFILES_FILES}/bin $HOME/local
+
 # Create symbolic links
 mv ~/.zshrc ~/.zshrc-default-bkp
 ln -s ${DOTFILES_FILES_CONFIGS}/.zshrc ~/.zshrc
