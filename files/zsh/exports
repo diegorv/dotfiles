@@ -5,3 +5,5 @@ export EDITOR='subl -w'
 export VISUAL="$EDITOR"
 
 export HISTFILE="$HOME/.zsh_history"
+
+export PATH="/usr/local/bin:$PATH"
