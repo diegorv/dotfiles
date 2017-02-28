@@ -103,6 +103,7 @@ Just follow the instructions! Easy peasy lemon squeezy :metal:
 * Install iterm2_shell_integration
 * Install Oh-My-Zsh
 * Install my `diegorv.zsh-theme`
+![zsh-theme](https://cloud.githubusercontent.com/assets/24455/23412017/fcf518d4-fdb2-11e6-9d24-6f0f56ff2ef0.png)
 
 ## 5. Ruby configuration
 * Install RBenv
