@@ -59,9 +59,6 @@ defaults write -g KeyRepeat -int 0.02
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
-# Disable dashboard widgets (saves RAM)
-defaults write com.apple.dashboard mcx-disabled -bool true
-
 # Show the main window when launching Activity Monitor
 defaults write com.apple.ActivityMonitor OpenMainWindow -bool true
 
@@ -211,9 +208,6 @@ defaults write com.apple.dock tilesize -int 36
 
 # Set Dock zoom size
 defaults write com.apple.dock magnification -int 0
-
-# Disable mission control
-defaults write com.apple.dock mcx-expose-disabled -bool true
 
 # Don’t show Dashboard as a Space
 defaults write com.apple.dock dashboard-in-overlay -bool true
