@@ -7,7 +7,7 @@ print_question 'Shell configurations...\n'
 chsh -s /bin/zsh
 
 # Install OH MY ZSH
-ask_for_confirmation "Would you like to install Oh-My-Zsh?"
+ask_for_confirmation 'Would you like to install Oh-My-Zsh?'
 
 if answer_is_yes; then
   print_success 'Starting installing Oh-My-Zsh.\n'
