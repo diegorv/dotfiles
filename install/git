@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 source ${DOTFILES_INSTALLER}/utils
 
+print_success 'Starting Git Configuration...'
+
 # Create symbolic link to default files
 ln -s ${DOTFILES_FILES}/.gitconfig ~/.gitconfig
 ln -s ${DOTFILES_FILES}/.gitignore ~/.gitignore
@@ -16,3 +18,5 @@ git config --global core.excludesfile ~/.gitignore
 
 # Signing commits using GPG
 git config --global commit.gpgsign true
+
+print_success 'Git Configuration done!'

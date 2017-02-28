@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 source ${DOTFILES_INSTALLER}/utils
 
+print_success 'Installing Ruby versions and configurations...'
+
 # Create symbolic link to default files
 ln -s ${DOTFILES_FILES}/.gemrc ~/.gemrc
 
@@ -13,3 +15,5 @@ rbenv install 2.4.0
 
 # RBenv default version
 rbenv global 2.3.0
+
+print_success 'Ruby installed.'

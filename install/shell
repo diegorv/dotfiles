@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 source ${DOTFILES_INSTALLER}/utils
 
-print_success 'Changing to ZSH and installing Oh-My-Zsh with extras'
+print_success 'Changing to ZSH and installing Oh-My-Zsh with extras...'
 
 # Change my shell to zsh
 chsh -s /bin/zsh

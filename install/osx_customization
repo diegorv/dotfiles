@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 source ${DOTFILES_INSTALLER}/utils
 
+print_success 'Starting OS X Customizations...'
+
 ###############################################################################
 # Security
 ###############################################################################
@@ -231,3 +233,5 @@ for app in Safari Finder Dock SystemUIServer
 do
   killall "$app" >/dev/null 2>&1
 done
+
+print_success 'OS X Customizations done.'

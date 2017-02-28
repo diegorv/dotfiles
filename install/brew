@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 source ${DOTFILES_INSTALLER}/utils
 
+print_success 'Install Brew and all apps...'
+
 # Install Homebrew
 /usr/bin/ruby -e \
   "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -13,3 +15,5 @@ ln -s ${DOTFILES_FILES}/Brewfile ~/.Brewfile
 
 # Install from local Brewfile
 brew bundle --global
+
+print_success 'Brew and all apps installed.'
