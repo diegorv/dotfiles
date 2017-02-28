@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 source ${DOTFILES_INSTALLER}/utils
 
-print_success 'Changing to ZSH and installing Oh-my-zsh'
+print_success 'Changing to ZSH and installing Oh-My-Zsh with extras'
 
 # Change my shell to zsh
 chsh -s /bin/zsh
@@ -14,4 +14,4 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 mkdir -p ~/.oh-my-zsh/custom/themes
 ln -s ${DOTFILES_FILES}/diegorv.zsh-theme ~/.oh-my-zsh/custom/themes/diegorv.zsh-theme
 
-print_success 'Oh-My-Zsh and personal theme Installed.'
+print_success 'Oh-My-Zsh installed.'
