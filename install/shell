@@ -8,5 +8,6 @@ cd ~
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh &> /dev/null
 
 # Install default theme
-ln -s ${DOTFILES_FILES}/diegorv.zsh-theme ~/.oh-my-zsh/themes/diegorv.zsh-theme
+mkdir -p ~/.oh-my-zsh/custom/themes
+ln -s ${DOTFILES_FILES}/diegorv.zsh-theme ~/.oh-my-zsh/custom/themes/diegorv.zsh-theme
 
