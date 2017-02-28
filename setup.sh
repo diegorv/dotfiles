@@ -9,8 +9,9 @@ source ${DOTFILES_INSTALLER}/utils
 source ${DOTFILES_INSTALLER}/my_variables
 clear
 
-print_in_purple '\nOS X Config Dotfiles - diegorv\n'
 ask_for_sudo
+
+print_in_purple '\nOS X Config Dotfiles - diegorv\n'
 
 # Run installers
 ${DOTFILES_INSTALLER}/osx_update
@@ -20,3 +21,5 @@ ${DOTFILES_INSTALLER}/brew
 ${DOTFILES_INSTALLER}/git
 ${DOTFILES_INSTALLER}/shell
 ${DOTFILES_INSTALLER}/ruby
+
+exit 0

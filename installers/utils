@@ -27,14 +27,14 @@ ask_for_sudo() {
   #
   # https://gist.github.com/cowboy/3118588
   while true; do
-    sudo -n true
-    sleep 60
+    sleep 60;
+    sudo -n true;
     kill -0 "$$" || exit
-  done &> /dev/null &
+  done 2>/dev/null &
 }
 
 print_error() {
-  print_in_red "  [✖] $1 $2\n"
+  print_in_red "[✖] $1 $2\n"
 }
 
 print_in_green() {
@@ -54,9 +54,9 @@ print_in_yellow() {
 }
 
 print_question() {
-  print_in_yellow "  [?] $1"
+  print_in_yellow "[?] $1"
 }
 
 print_success() {
-  print_in_green "  [✔] $1\n"
+  print_in_green "[✔] $1\n"
 }
