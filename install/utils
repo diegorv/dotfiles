@@ -2,6 +2,23 @@
 
 # From https://raw.githubusercontent.com/alrra/dotfiles/master/src/os/utils.sh
 
+answer_is_yes() {
+  [[ "$REPLY" =~ ^[Yy]$ ]] \
+    && return 0 \
+    || return 1
+}
+
+ask_for_confirmation() {
+  print_question "$1 (y/n) "
+  read -n 1
+  printf "\n"
+}
+
+cmd_exists() {
+  command -v "$1" &> /dev/null
+  return $?
+}
+
 ask_for_sudo() {
   # Ask for the administrator password upfront.
 
@@ -39,24 +56,8 @@ print_in_yellow() {
   printf "\e[0;33m$1\e[0m"
 }
 
-print_in_blue() {
-  printf "  \e[0;34m$1\e[0m\n"
-}
-
-print_info() {
-  print_in_purple "\n $1\n\n"
-}
-
 print_question() {
   print_in_yellow "  [?] $1"
-}
-
-print_result() {
-  [ $1 -eq 0 ] \
-      && print_success "$2" \
-      || print_error "$2"
-
-  return $1
 }
 
 print_success() {

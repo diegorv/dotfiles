@@ -14,6 +14,13 @@ brew update
 ln -s ${DOTFILES_FILES}/Brewfile ~/.Brewfile
 
 # Install from local Brewfile
-brew bundle --global
+ask_for_confirmation "Would you like to install all apps from Brewfile?"
 
-print_success 'Brew and all apps installed.\n'
+if answer_is_yes; then
+  brew bundle --global
+  print_success 'Brew and all apps installed.\n'
+else
+  print_success 'Only Brew installed.\n'
+fi
+
+
