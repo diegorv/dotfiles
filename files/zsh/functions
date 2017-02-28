@@ -6,7 +6,7 @@ function mcd() {
 }
 
 # server : Start an HTTP server from a directory, optionally specifying the port
-function server() {
+function pserver() {
   local port="${1:-8000}"
   open "http://localhost:${port}/"
 

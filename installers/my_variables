@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-source ${DOTFILES_INSTALLER}/utils
 
 # Git vars
 export GIT_NAME='Diego'

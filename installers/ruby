@@ -4,7 +4,8 @@ source ${DOTFILES_INSTALLER}/utils
 print_question 'Installing Ruby versions and configurations...\n'
 
 # Create symbolic link to default files
-ln -s ${DOTFILES_FILES}/.gemrc ~/.gemrc
+ln -s ${DOTFILES_FILES_CONFIGS}/.gemrc ~/.gemrc
+ln -s ${DOTFILES_FILES_CONFIGS}/.irbrc ~/.irbrc
 
 # Create default file to irb history
 touch ~/.irb-history

@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+source ${DOTFILES_INSTALLER}/utils
+
+print_question 'Shell configurations...\n'
+
+# Change my shell to zsh
+chsh -s /bin/zsh
+
+# Install OH MY ZSH
+ask_for_confirmation "Would you like to install Oh-My-Zsh?"
+
+if answer_is_yes; then
+  print_success 'Starting installing Oh-My-Zsh.\n'
+  cd ~
+  curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh &> /dev/null
+else
+  print_in_yellow 'Skipping Oh-My-Zsh installation.\n'
+fi
+
+mv ~/.zshrc ~/.zshrc-default-bkp
+ln -s ${DOTFILES_FILES_CONFIGS}/.zshrc ~/.zshrc
+
+# Install default theme
+mkdir -p ~/.oh-my-zsh/custom/themes
+ln -s ${DOTFILES_FILES_THEMES}/diegorv.zsh-theme ~/.oh-my-zsh/custom/themes/diegorv.zsh-theme
+
+print_success 'Oh-My-Zsh installed.\n'

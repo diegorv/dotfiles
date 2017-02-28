@@ -11,6 +11,8 @@ alias historyc='rm ~/.zsh_history'
 # Edit .zshrc config file
 alias zshedit='$EDITOR ~/.zshrc'
 
+alias brews='brew services'
+
 ###############################################################################
 # File navigation aliases
 ###############################################################################
@@ -33,6 +35,8 @@ alias .5='cd ../../../../../'
 # Go back 6 directory levels
 alias .6='cd ../../../../../../'
 
+alias ls="ls -G -h"
+alias la='ls -lA'
 alias ll="ls -FGlahs"
 
 alias ri="ri -f ansi"
@@ -46,3 +50,11 @@ alias bu="bundle update"
 alias bi="bundle install"
 alias bs="bundle show"
 alias bv="bundle install --path vendor"
+
+alias rserver='ruby -run -e httpd -- -p 9292 .'
+
+alias r='rails'
+alias RD='RAILS_ENV=development'
+alias RT='RAILS_ENV=test'
+alias RS='RAILS_ENV=staging'
+alias RP='RAILS_ENV=production'
