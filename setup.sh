@@ -18,8 +18,8 @@ ${DOTFILES_INSTALLER}/osx_customization
 
 ${DOTFILES_INSTALLER}/brew
 ${DOTFILES_INSTALLER}/git
-${DOTFILES_INSTALLER}/ruby
 ${DOTFILES_INSTALLER}/shell
+${DOTFILES_INSTALLER}/ruby
 
 # Copy binaries to ~/local/bin
 cp -R $DOTFILES_FILES/bin $HOME/local
