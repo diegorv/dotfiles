@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 source ${DOTFILES_INSTALLER}/utils
 
-print_success 'Install Brew and all apps...'
+print_question 'Install Brew and all apps...\n'
 
 # Install Homebrew
 /usr/bin/ruby -e \
@@ -16,4 +16,4 @@ ln -s ${DOTFILES_FILES}/Brewfile ~/.Brewfile
 # Install from local Brewfile
 brew bundle --global
 
-print_success 'Brew and all apps installed.'
+print_success 'Brew and all apps installed.\n'

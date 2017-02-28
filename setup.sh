@@ -6,7 +6,7 @@ export DOTFILES_FILES="${DOTFILES}/files"
 source ${DOTFILES_INSTALLER}/utils
 clear
 
-print_in_purple '\nOS X Config Dotfiles - diegorv\n\n'
+print_in_purple '\nOS X Config Dotfiles - diegorv\n'
 ask_for_sudo
 
 # Run installers

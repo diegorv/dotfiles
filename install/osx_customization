@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 source ${DOTFILES_INSTALLER}/utils
 
-print_success 'Starting OS X Customizations...'
+print_question 'Starting OS X Customizations...\n'
 
 ###############################################################################
 # Security
@@ -234,4 +234,4 @@ do
   killall "$app" >/dev/null 2>&1
 done
 
-print_success 'OS X Customizations done.'
+print_success 'OS X Customizations done.\n'
