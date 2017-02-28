@@ -58,7 +58,7 @@ defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 # Turn off keyboard illumination when computer is not used for 30 seconds"
 defaults write com.apple.BezelServices kDimTime -int 30
 
-# Make cursor faster
+# Make keyboard cursor faster
 defaults write -g InitialKeyRepeat -int 15
 defaults write -g KeyRepeat -int 0.02
 
@@ -149,13 +149,13 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 # Disable window animations and Get Info animations
 defaults write com.apple.finder DisableAllAnimations -bool true
 
-# allow quitting Finder via ⌘ + Q; doing so will also hide desktop icons
+# Allow quitting Finder via ⌘ + Q; doing so will also hide desktop icons
 defaults write com.apple.finder QuitMenuItem -bool false
 
-# Show status bar.
+# Show status bar
 defaults write com.apple.finder ShowStatusBar -boolean true
 
-# Show Path bar in Finder"
+# Show Path bar in Finder
 defaults write com.apple.finder ShowPathbar -bool true
 
 # Show sidebar on Finder
