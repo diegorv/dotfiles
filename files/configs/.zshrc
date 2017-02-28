@@ -24,11 +24,11 @@ plugins=(git sublime git-prompt rails last-working-dir)
 # The optional three formats: 'mm/dd/yyyy'|'dd.mm.yyyy'|'yyyy-mm-dd'
 HIST_STAMPS='dd.mm.yyyy'
 
+# Iterm2 integration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
 # User configuration
 source $ZSH/oh-my-zsh.sh
 
 # RubyENV loading
 eval "$(rbenv init -)"
-
-# Iterm2 integration
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
