@@ -20,6 +20,8 @@ fi
 mv ~/.zshrc ~/.zshrc-default-bkp
 ln -s ${DOTFILES_FILES_CONFIGS}/.zshrc ~/.zshrc
 
+ln -s ${DOTFILES_FILES_CONFIGS}/.inputrc ~/.inputrc
+
 # Install default theme
 mkdir -p ~/.oh-my-zsh/custom/themes
 ln -s ${DOTFILES_FILES_THEMES}/diegorv.zsh-theme ~/.oh-my-zsh/custom/themes/diegorv.zsh-theme

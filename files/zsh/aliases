@@ -3,7 +3,7 @@
 ###############################################################################
 
 # Clean terminal logs
-alias cleanlogs="sudo rm -rf /private/var/log/asl/*.asl"
+alias cleanlogs='sudo rm -rf /private/var/log/asl/*.asl'
 
 # Zsh shell history clean
 alias historyc='rm ~/.zsh_history'
@@ -12,6 +12,8 @@ alias historyc='rm ~/.zsh_history'
 alias zshedit='$EDITOR ~/.zshrc'
 
 alias brews='brew services'
+
+alias reload="source ~/.zshrc"
 
 ###############################################################################
 # File navigation aliases
@@ -35,21 +37,21 @@ alias .5='cd ../../../../../'
 # Go back 6 directory levels
 alias .6='cd ../../../../../../'
 
-alias ls="ls -G -h"
+alias ls='ls -G -h'
 alias la='ls -lA'
-alias ll="ls -FGlahs"
+alias ll='ls -FGlahs'
 
-alias ri="ri -f ansi"
+alias ri='ri -f ansi'
 
 ###############################################################################
 # Ruby aliases
 ###############################################################################
 
-alias be="bundle exec"
-alias bu="bundle update"
-alias bi="bundle install"
-alias bs="bundle show"
-alias bv="bundle install --path vendor"
+alias be='bundle exec'
+alias bu='bundle update'
+alias bi='bundle install'
+alias bs='bundle show'
+alias bv='bundle install --path vendor'
 
 alias rserver='ruby -run -e httpd -- -p 9292 .'
 
