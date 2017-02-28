@@ -5,7 +5,7 @@ print_question 'Install Brew and all apps...\n'
 
 # Install/Update Homebrew
 
-if cmd_exists "brew"; then
+if cmd_exists 'brew'; then
   print_success 'Updating Brew.\n'
   brew update
 else
@@ -18,7 +18,7 @@ fi
 ln -s ${DOTFILES_FILES}/Brewfile ~/.Brewfile
 
 # Install from local Brewfile
-ask_for_confirmation "Would you like to install all apps from Brewfile?"
+ask_for_confirmation 'Would you like to install all apps from Brewfile?'
 
 if answer_is_yes; then
   brew bundle --global

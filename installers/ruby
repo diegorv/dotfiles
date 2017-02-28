@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 source ${DOTFILES_INSTALLER}/utils
 
-print_question 'Installing Ruby versions and configurations...\n'
+print_question 'Ruby configurations...\n'
 
 # Create symbolic link to default files
 ln -s ${DOTFILES_FILES_CONFIGS}/.gemrc ~/.gemrc
@@ -11,10 +11,15 @@ ln -s ${DOTFILES_FILES_CONFIGS}/.irbrc ~/.irbrc
 touch ~/.irb-history
 
 # RBenv installs
-rbenv install 2.3.0
-rbenv install 2.4.0
 
-# RBenv default version
-rbenv global 2.3.0
+ask_for_confirmation 'Would you like to install ruby versions [2.3/2.4]?'
 
-print_success 'Ruby installed.\n'
+if answer_is_yes; then
+  print_success 'Installing ruby versions.\n'
+  rbenv install 2.3.0
+  rbenv install 2.4.0
+  rbenv global 2.3.0
+  print_success 'Ruby installed with 2.30 default.\n'
+else
+  print_success 'Skipping ruby installation.\n'
+fi
