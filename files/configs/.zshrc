@@ -29,3 +29,6 @@ source $ZSH/oh-my-zsh.sh
 
 # RubyENV loading
 eval "$(rbenv init -)"
+
+# Iterm2 integration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
