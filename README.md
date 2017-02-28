@@ -17,13 +17,13 @@ Just follow the instructions! Easy peasy lemon squeezy :metal:
 
 # Setup process
 
-1. [OS Customizations](#1-os-customizations)
+1. [OS X Customization](#1-os-x-customization)
 2. [Brew installation](#2-brew-installation)
 3. [Git configuration](#3-git-configuration)
 4. [Shell configuration](#4-shell-configuration)
 5. [Ruby configuration](#5-ruby-configuration)
 
-## 1. OS Customizations
+## 1. OS X Customization
 
 ### Others
 * Install the latest macOS software updates
