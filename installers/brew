@@ -3,12 +3,16 @@ source ${DOTFILES_INSTALLER}/utils
 
 print_question 'Install Brew and all apps...\n'
 
-# Install Homebrew
-/usr/bin/ruby -e \
-  "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# Install/Update Homebrew
 
-# Update Homebrew.
-brew update
+if cmd_exists "brew"; then
+  print_success 'Updating Brew.\n'
+  brew update
+else
+  print_success 'Installing Brew.\n'
+  /usr/bin/ruby -e \
+    "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
 
 # Copy dotfiles Brewfile to Home
 ln -s ${DOTFILES_FILES}/Brewfile ~/.Brewfile
