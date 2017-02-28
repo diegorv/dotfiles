@@ -1,17 +1,15 @@
-#!/usr/bin/env bash
-
 # Dotfiles vars
 export DOTFILES="${HOME}/.dotfiles"
 export DOTFILES_INSTALLER="${DOTFILES}/install"
 export DOTFILES_FILES="${DOTFILES}/files"
 
+source ${DOTFILES_INSTALLER}/utils
 clear
-
-# Run installers
-${DOTFILES_INSTALLER}/utils
 
 print_in_purple '\nOS X Config Dotfiles - diegorv\n\n'
 ask_for_sudo
+
+# Run installers
 
 ${DOTFILES_INSTALLER}/my_variables
 ${DOTFILES_INSTALLER}/osx_update

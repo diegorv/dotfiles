@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+source ${DOTFILES_INSTALLER}/utils
 
 # Install Homebrew
 /usr/bin/ruby -e \

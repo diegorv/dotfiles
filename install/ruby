@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+source ${DOTFILES_INSTALLER}/utils
 
 # Create symbolic link to default files
 ln -s ${DOTFILES_FILES}/.gemrc ~/.gemrc

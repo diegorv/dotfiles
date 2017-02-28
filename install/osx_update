@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+source ${DOTFILES_INSTALLER}/utils
 
 # Check and install any remaining software updates.
 sudo softwareupdate --install --all
