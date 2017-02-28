@@ -35,6 +35,7 @@
   default = current
 [commit]
   template = ~/.gitmessage
+  gpgsign = true
 [core]
   excludesfile = ~/.gitignore
   attributesfile = ~/.gitattributes

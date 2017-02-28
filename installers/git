@@ -11,12 +11,14 @@ ln -s ${DOTFILES_FILES_CONFIGS}/.gitignore ~/.gitignore
 git config --global user.name "$GIT_NAME"
 git config --global user.email "$GIT_EMAIL"
 git config --global github.user "$GITHUB_USER"
-git config --replace-all --global core.editor subl --wait
 
 # Default .gitignore
-git config --global core.excludesfile ~/.gitignore
+# git config --global core.excludesfile ~/.gitignore
+
+# Default editor
+# git config --global core.editor subl --wait
 
 # Signing commits using GPG
-git config --global commit.gpgsign true
+# git config --global commit.gpgsign true
 
 print_success 'Git Configuration done!\n'
