@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+${DOTFILES_INSTALLER}/utils
+
 print_success 'Changing to ZSH and installing Oh-my-zsh'
 
 # Change my shell to zsh
