@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-source ${DOTFILES_INSTALLER}/utils
-
 print_question 'Ruby configurations...\n'
 
 # Create symbolic link to default files

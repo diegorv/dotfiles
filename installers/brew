@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
-source ${DOTFILES_INSTALLER}/utils
-
 print_question 'Install Brew and all apps...\n'
 
 # Install/Update Homebrew
-
 if cmd_exists 'brew'; then
   print_success 'Updating Brew.\n'
   brew update
@@ -26,5 +23,3 @@ if answer_is_yes; then
 else
   print_success 'Only Brew installed.\n'
 fi
-
-

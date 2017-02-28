@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-source ${DOTFILES_INSTALLER}/utils
-
 ask_for_confirmation 'OS X Softwares updating and installing Xcode Command Line tools?'
 
 if answer_is_yes; then

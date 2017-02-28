@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # From https://raw.githubusercontent.com/alrra/dotfiles/master/src/os/utils.sh
 
 answer_is_yes() {

@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-source ${DOTFILES_INSTALLER}/utils
-
 print_question 'Starting Git Configuration...\n'
 
 # Create symbolic link to default files
