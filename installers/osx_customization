@@ -35,7 +35,6 @@ defaults write com.apple.Safari \
   com.apple.Safari.ContentPageGroupIdentifier.WebKit2JavaEnabledForLocalFiles \
   -bool false
 
-
 ###############################################################################
 # OS X others
 ###############################################################################
