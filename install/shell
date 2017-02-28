@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
 # Change my shell to zsh
-chsh -s $(type -ap zsh | grep $(brew --prefix))
+chsh -s /bin/zsh
 
 # Install OH MY ZSH
+cd ~
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Install default theme
-ln -s ${DOTFILES_FILES}/diegorv.zsh-theme ~/.oh-my-zsh/custom/diegorv.zsh-theme
+ln -s ${DOTFILES_FILES}/diegorv.zsh-theme ~/.oh-my-zsh/themes/diegorv.zsh-theme
 

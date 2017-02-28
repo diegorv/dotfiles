@@ -37,6 +37,10 @@ defaults write com.apple.Safari \
 # OS X others
 ###############################################################################
 
+# Save screenshots in ~/Pictures/Screenshots folder
+mkdir $HOME/Screenshots
+defaults write com.apple.screencapture location -string "$HOME/Screenshots"
+
 # Check for software updates daily, not just once per week
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
