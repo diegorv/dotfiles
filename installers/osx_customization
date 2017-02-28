@@ -40,7 +40,7 @@ defaults write com.apple.Safari \
 ###############################################################################
 
 # Save screenshots in ~/Pictures/Screenshots folder
-mkdir $HOME/Screenshots
+mkdir $HOME/Desktop/Screenshots
 defaults write com.apple.screencapture location -string "$HOME/Desktop/Screenshots"
 
 # Check for software updates daily, not just once per week
