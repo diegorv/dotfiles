@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
+
+# Load utils
+source ${DOTFILES_INSTALLER}/utils
+
+###############################################################################
+# Ruby
+###############################################################################
+
 print_question 'Ruby configurations...\n'
 
 # Create symbolic link to default files

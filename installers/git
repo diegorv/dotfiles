@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
+
+# Load utils
+source ${DOTFILES_INSTALLER}/utils
+
+###############################################################################
+# Git
+###############################################################################
+
 print_question 'Starting Git Configuration...\n'
 
 # Create symbolic link to default files

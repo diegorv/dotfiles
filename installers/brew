@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
+
+# Load utils
+source ${DOTFILES_INSTALLER}/utils
+
+###############################################################################
+# BREW
+###############################################################################
+
 print_question 'Install Brew and all apps...\n'
 
 # Install/Update Homebrew

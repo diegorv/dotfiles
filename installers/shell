@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
+
+# Load utils
+source ${DOTFILES_INSTALLER}/utils
+
+###############################################################################
+# Shell
+###############################################################################
+
 print_question 'Shell configurations...\n'
 
 # Change my shell to zsh
