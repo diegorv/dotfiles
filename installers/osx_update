@@ -1,13 +1,17 @@
 #!/usr/bin/env bash
 source ${DOTFILES_INSTALLER}/utils
 
-print_question 'OS X Softwares updating and installing Xcode Command Line tools...\n'
+ask_for_confirmation 'OS X Softwares updating and installing Xcode Command Line tools?'
 
-# Check and install any remaining software updates.
-sudo softwareupdate --install --all
+if answer_is_yes; then
+  # Check and install any remaining software updates.
+  sudo softwareupdate --install --all
 
-# Install the Xcode Command Line Tools.
-xcode-select --install
-sudo xcodebuild -license accept
+  # Install the Xcode Command Line Tools.
+  xcode-select --install
+  sudo xcodebuild -license accept
 
-print_success 'OS X Softwares installed and updated.\n'
+  print_success 'OS X Softwares installed and updated.\n'
+else
+  print_success 'OS X Softwares updating.\n'
+fi
