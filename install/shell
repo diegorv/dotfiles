@@ -8,5 +8,5 @@ cd ~
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Install default theme
-ln -s ${DOTFILES_FILES}/diegorv.zsh-theme ~/.oh-my-zsh/themes/diegorv.zsh-theme
+cp -iv ${DOTFILES_FILES}/diegorv.zsh-theme ~/.oh-my-zsh/themes/diegorv.zsh-theme
 
