@@ -233,4 +233,4 @@ do
   killall "$app" >/dev/null 2>&1
 done
 
-print_success 'OS X Customizations done.\n'
+print_success 'OS X Customizations finished.\n'
