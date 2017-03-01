@@ -50,7 +50,7 @@ Just follow the instructions! Easy peasy lemon squeezy :metal:
 
 ## Finder
 * Disable window animations and Get Info animations
-* allow quitting Finder via ⌘ + Q; doing so will also hide desktop icons
+* Allow quitting Finder via ⌘ + Q; doing so will also hide desktop icons
 * Show status bar.
 * Show Path bar in Finder
 * Show sidebar on Finder

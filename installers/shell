@@ -27,7 +27,7 @@ if cmd_exists 'upgrade_oh_my_zsh'; then
   print_success 'Updating Oh-My-Zsh.\n'
   upgrade_oh_my_zsh
 else
-  # Install OH MY ZSH
+  # Install Oh-My-Zsh
   ask_for_confirmation 'Would you like to install Oh-My-Zsh?'
 
   if answer_is_yes; then
