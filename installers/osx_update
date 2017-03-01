@@ -19,5 +19,5 @@ if answer_is_yes; then
 
   print_success 'OS X Softwares installed and updated.\n'
 else
-  print_success 'OS X Softwares updating.\n'
+  print_success 'OS X Softwares skipping.\n'
 fi
