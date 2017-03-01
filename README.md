@@ -32,7 +32,7 @@ Just follow the instructions! Easy peasy lemon squeezy :metal:
 * Save screenshots in ~/Pictures/Screenshots folder
 * Check for software updates daily, not just once per week
 * Disable system-wide resume
-* Turn off keyboard illumination when computer is not used for 30 seconds"
+* Turn off keyboard illumination when computer is not used for 30 seconds
 * Make keyboard cursor faster
 * Disable auto-correct
 * Show the main window when launching Activity Monitor
@@ -63,7 +63,7 @@ Just follow the instructions! Easy peasy lemon squeezy :metal:
 * Avoid creation of .DS_Store files on network volumes
 * Show all filename extensions
 * Use current directory as default search scope in Finder
-* Set default Finder path.
+* Set default Finder path
 * Show the ~/Library folder
 
 ## Dock
