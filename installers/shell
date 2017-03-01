@@ -23,19 +23,25 @@ ln -s ${DOTFILES_FILES_CONFIGS}/.inputrc ~/.inputrc
 # Iterm2 integration
 curl -L https://iterm2.com/misc/zsh_startup.in -o ${HOME}/.iterm2_shell_integration.zsh
 
-# Install OH MY ZSH
-ask_for_confirmation 'Would you like to install Oh-My-Zsh?'
-
-if answer_is_yes; then
-  print_success 'Starting installing Oh-My-Zsh.\n'
-  cd ~
-  curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh &> /dev/null
+# Install/Update Homebrew
+if cmd_exists 'upgrade_oh_my_zsh'; then
+  print_success 'Updating Oh-My-Zsh.\n'
+  upgrade_oh_my_zsh
 else
-  print_in_yellow 'Skipping Oh-My-Zsh installation.\n'
+  # Install OH MY ZSH
+  ask_for_confirmation 'Would you like to install Oh-My-Zsh?'
+
+  if answer_is_yes; then
+    print_success 'Starting installing Oh-My-Zsh.\n'
+    cd ~
+    curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh &> /dev/null
+
+    # Install default theme
+    mkdir -p ~/.oh-my-zsh/custom/themes
+    ln -s ${DOTFILES_FILES_THEMES}/diegorv.zsh-theme ~/.oh-my-zsh/custom/themes/diegorv.zsh-theme
+  else
+    print_in_yellow 'Skipping Oh-My-Zsh installation.\n'
+  fi
 fi
 
-# Install default theme
-mkdir -p ~/.oh-my-zsh/custom/themes
-ln -s ${DOTFILES_FILES_THEMES}/diegorv.zsh-theme ~/.oh-my-zsh/custom/themes/diegorv.zsh-theme
-
-print_success 'Oh-My-Zsh installed.\n'
+print_success 'Shell installed.\n'
