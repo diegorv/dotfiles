@@ -60,3 +60,8 @@ alias RD='RAILS_ENV=development'
 alias RT='RAILS_ENV=test'
 alias RS='RAILS_ENV=staging'
 alias RP='RAILS_ENV=production'
+
+alias ss='rails s'
+alias ss4='rails s -p 4000'
+alias ss5='rails s -p 5000'
+alias ss6='rails s -p 6000'
