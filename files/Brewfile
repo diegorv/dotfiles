@@ -66,6 +66,8 @@ mas 'Moom', id: 419330170
 mas 'Cinch', id: 412529613
 mas 'DaisyDisk', id: 411643860
 mas 'Boom 2', id: 948176063
+mas 'Pocket', id: 568494494
+mas 'Crazy Tomato', id: 1105814268
 
 # CASK
 tap 'caskroom/cask'
