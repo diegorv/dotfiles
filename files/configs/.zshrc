@@ -17,7 +17,7 @@ ZSH_THEME='diegorv'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sublime git-prompt rails last-working-dir)
+plugins=(git sublime git-prompt rails last-working-dir k)
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -29,6 +29,12 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # User configuration
 source $ZSH/oh-my-zsh.sh
+
+# Autojump
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+# FZF
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # RubyENV loading
 eval "$(rbenv init -)"
