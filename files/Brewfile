@@ -29,6 +29,9 @@ brew 'nodenv'
 brew 'node-build'
 brew 'yarn'
 
+brew 'fzf'
+brew 'autojump'
+
 brew 'phantomjs'
 
 brew 'webp'
