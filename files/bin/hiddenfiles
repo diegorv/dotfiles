@@ -8,3 +8,5 @@ else
 fi
 
 defaults write com.apple.finder AppleShowAllFiles $state
+
+killall Finder
