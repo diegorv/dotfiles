@@ -5,15 +5,17 @@
 # Clean terminal logs
 alias cleanlogs='sudo rm -rf /private/var/log/asl/*.asl'
 
-# Zsh shell history clean
+# Clean shell history
 alias historyc='rm ~/.zsh_history'
 
-# Edit .zshrc config file
-alias zshedit='$EDITOR ~/.zshrc'
-
+# Brew alias to services
 alias brews='brew services'
 
-alias reload="source ~/.zshrc"
+# Reload shell config
+alias reload='source ~/.zshrc'
+
+# Alias to Sublime (subl)
+alias st='subl'
 
 ###############################################################################
 # File navigation aliases
