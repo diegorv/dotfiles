@@ -1,50 +1,85 @@
 [color]
-  branch = auto
   diff = auto
+  grep = auto
+  interactive = auto
   status = auto
-  ui = true
-[color "diff"]
-  commit = yellow
-  frag = cyan reverse
-  meta = black
-  new = green
-  old = red
-  plain = black
-  whitespace = normal red
+  branch = auto
+  status = auto
+  ui = auto
+
 [alias]
-  b = branch
-  ca = commit --amend
+  st = status -sb
+  s = status -sb
   ci = commit
+  wip = !git add . && git commit -am 'WIP :construction:'
+  stash-all = stash save --include-untracked
+  b = branch
+  d = diff
+  pf = push --force-with-lease
+  ap = add --patch
+  ds = diff --staged
+  tags = tag -l
+  com = checkout master
+  branches = branch -a
+  remotes = remote -v
+  sp = stash pop
+  rc = rebase --continue
+  rim = rebase -i master
+  prune = fetch --prune
+  r = reset
+  undo = reset --soft HEAD^
+  fup = log --since '1 day ago' --oneline --author andriel.nuernberg@plataformatec.com.br
+  rank = shortlog -sn --no-merges
+  cl = "!git log $1..${2:-master} --oneline --no-merges --pretty=format:'- %s (%h)'"
+  l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  ls = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]' --decorate --date=short
+  lf = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]' --decorate --date=short --numstat
   co = checkout
-  dw = diff --word-diff
-  fl = log -p
-  lg = log --oneline --decorate
-  sb = status -sb
-  sh = !git-sh
-  st = status
-  who = shortlog -s --
-  l = !git --no-pager lp -20
-  lme = !GIT_USERNAME="$(git config user.name)" && git --no-pager lp --author="\"$GIT_NAME\""
-  lpme = !GIT_USERNAME="$(git config user.name)" && git lp --author="\"$GIT_NAME\""
-  lp = log --pretty=format:'%C(red dim)%h%Creset %C(yellow dim)%an%C(green) %cd%C(reset)%C(white) %s%Creset -%C(blue dim)%d%Creset' --date=format:'%Y%m%d %R'
-[help]
-  autocorrect = 1
-[branch]
-  autosetuprebase = always
+  fix = commit --amend
+  fixx = !git add . && git commit --amend --no-edit
+  pom = push origin master
+  latest = for-each-ref --count=10 --sort=-committerdate --format='%(committerdate:short) %(refname:short)'
+
+[core]
+  editor = subl -w -n
+  excludesfile = ~/.gitignore
+  pager = diff-so-fancy | less --tabs=1,5 -R
+  whitespace = warn
+
+[include]
+  path = ~/.gitconfig-personal
+[includeIf "gitdir:~/src/personal"]
+  path = ~/.gitconfig-personal
+[includeIf "gitdir:~/src/ptec"]
+  path = ~/.gitconfig-work
+
 [push]
   default = current
+  followTags = true
+
+[merge]
+  ff = false
+  conflictstyle = diff3
+
+[pull]
+  rebase = true
+
 [commit]
   template = ~/.gitmessage
-  gpgsign = true
-[core]
-  excludesfile = ~/.gitignore
-  attributesfile = ~/.gitattributes
-	editor = subl -n -w
-[merge]
-  ff = only
-[fetch]
-  prune = true
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	required = true
+  #gpgsign = true
+
+[status]
+  showUntrackedFiles = all
+
+[diff]
+  tool = icdiff
+[difftool]
+  prompt = false
+[difftool "icdiff"]
+  cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
+
+[gpg]
+  program = /usr/local/bin/gpg
+
+[github]
+  user = diegorv
