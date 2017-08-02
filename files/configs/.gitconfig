@@ -64,7 +64,6 @@
 
 [commit]
   template = ~/.gitmessage
-  #gpgsign = true
 
 [status]
   showUntrackedFiles = all
