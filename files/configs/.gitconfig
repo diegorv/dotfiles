@@ -48,8 +48,6 @@
 
 [include]
   path = ~/.gitconfig-personal
-[includeIf "gitdir:~/src/personal"]
-  path = ~/.gitconfig-personal
 [includeIf "gitdir:~/src/ptec"]
   path = ~/.gitconfig-work
 
