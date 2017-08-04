@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
 # Git vars
-export GIT_NAME=""
-export GIT_EMAIL=""
-export GITHUB_USER=""
+export GIT_NAME="Diego Rossini Vieira"
+export GIT_EMAIL="eu@diegorv.com"
+export GITHUB_USER="diegorv"
