@@ -48,7 +48,7 @@
 
 [include]
   path = ~/.gitconfig-personal
-[includeIf "gitdir:~/src/ptec"]
+[includeIf "gitdir:~/Dropbox/Sync/Rails/ptec"]
   path = ~/.gitconfig-work
 
 [push]
