@@ -17,6 +17,8 @@ alias reload='source ~/.zshrc'
 # Alias to Sublime (subl)
 alias st='subl'
 
+alias killruby="ps aux | pgrep -lf 'rack|spring|rails|ruby|puma|sneakers' | awk '{print $1}' | xargs kill -9"
+
 ###############################################################################
 # File navigation aliases
 ###############################################################################
