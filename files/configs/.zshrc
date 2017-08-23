@@ -30,15 +30,11 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # User configuration
 source $ZSH/oh-my-zsh.sh
 
+# RubyENV loading
+eval "$(rbenv init -)"
+
 # Autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # FZF
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# RubyENV loading
-eval "$(rbenv init -)"
-
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
