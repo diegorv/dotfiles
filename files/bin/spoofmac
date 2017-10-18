@@ -1,3 +1,10 @@
 #!/usr/bin/env bash
-mac=$(openssl rand -hex 1 | tr '[:lower:]' '[:upper:]' | xargs echo "obase=2;ibase=16;" | bc | cut -c1-6 | sed 's/$/00/' | xargs echo "obase=16;ibase=2;" | bc | sed "s/$/:$(openssl rand -hex 5 | sed 's/\(..\)/\1:/g; s/.$//' | tr '[:lower:]' '[:upper:]')/")
-sudo ifconfig en0 ether $mac
+computer_name=$(date |md5 | head -c8; echo)
+
+sudo scutil --set LocalHostName $computer_name
+sudo scutil --set ComputerName $computer_name
+sudo scutil --set HostName $computer_name
+
+# Need to install: https://github.com/feross/spoof
+sudo spoof randomize en0
+sudo spoof list en0 --wifi
