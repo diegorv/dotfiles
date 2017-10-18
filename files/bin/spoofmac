@@ -1,10 +1,19 @@
 #!/usr/bin/env bash
+
+# When you think about social engineering. Be trackable can be dangerous.
+# Fucking dangerous.
+# I don't want to keep my mac address and computer name always connected to me.
+# I want to randomize this, ever.
+
+# Create a random string
 computer_name=$(date |md5 | head -c8; echo)
 
+# Change my Macbook "names"
 sudo scutil --set LocalHostName $computer_name
 sudo scutil --set ComputerName $computer_name
 sudo scutil --set HostName $computer_name
 
-# Need to install: https://github.com/feross/spoof
+# Randomize my Mac Address
+# Need to install: Spoof (https://github.com/feross/spoof)
 sudo spoof randomize en0
 sudo spoof list en0 --wifi
