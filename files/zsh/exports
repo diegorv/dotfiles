@@ -8,4 +8,11 @@ export HISTFILE="$HOME/.zsh_history"
 
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 export PATH="/usr/local/opt/postgresql@9.4/bin:$PATH"
+
+export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/local:$PATH"
+
+export PATH="$PATH:/usr/local/opt/go/libexec/bin"
+export PATH="$HOME/.go/bin:$PATH"
+export GOROOT="/usr/local/opt/go/libexec"
+export GOPATH="$HOME/.go"
