@@ -13,6 +13,8 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/local:$PATH"
 
 export PATH="$PATH:/usr/local/opt/go/libexec/bin"
-export PATH="$HOME/.go/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
 export GOROOT="/usr/local/opt/go/libexec"
-export GOPATH="$HOME/.go"
+export GOPATH="$HOME/go"
+
+export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
