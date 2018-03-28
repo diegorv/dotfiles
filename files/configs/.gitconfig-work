@@ -1,7 +1,0 @@
-[user]
-  email = diego.rossini@plataformatec.com.br
-  name = Diego Rossini Vieira
-  signingkey = 6CECF50326EFDCD7
-
-[commit]
-  gpgsign = true

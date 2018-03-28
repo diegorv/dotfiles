@@ -1,7 +1,0 @@
-[user]
-  email = eu@diegorv.com
-  name = Diego Rossini Vieira
-  signingkey = E12FCDEFDF50277A
-
-[commit]
-  gpgsign = true
