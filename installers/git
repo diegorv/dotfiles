@@ -11,8 +11,8 @@ print_question 'Starting Git Configuration...\n'
 
 # Create symbolic link to default files
 ln -sf ${DOTFILES_FILES_CONFIGS}/.gitconfig ~/.gitconfig
-ln -sf ${DOTFILES_FILES_CONFIGS}/.gitconfig-personal ~/.gitconfig-personal
-ln -sf ${DOTFILES_FILES_CONFIGS}/.gitconfig-work ~/.gitconfig-work
+ln -sf ${DOTFILES_FILES_CONFIGS}/.gitconfig-personal.example ~/.gitconfig-personal
+ln -sf ${DOTFILES_FILES_CONFIGS}/.gitconfig-work.example ~/.gitconfig-work
 ln -sf ${DOTFILES_FILES_CONFIGS}/.gitignore ~/.gitignore
 ln -sf ${DOTFILES_FILES_CONFIGS}/.gitmessage ~/.gitmessage
 
