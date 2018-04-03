@@ -54,6 +54,8 @@ brew 'puma/puma/puma-dev'
 brew 'erlang'
 brew 'elixir'
 
+brew 'go'
+
 brew 'postgresql'
 
 # MAS
