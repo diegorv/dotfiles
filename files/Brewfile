@@ -21,6 +21,7 @@ brew 'masscan'
 brew 'nmap'
 brew 'mitmproxy'
 brew 'ssh-copy-id'
+brew 'gron'
 
 brew 'rbenv'
 brew 'ruby-build'
