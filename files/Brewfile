@@ -25,6 +25,8 @@ brew 'ssh-copy-id'
 brew 'rbenv'
 brew 'ruby-build'
 
+brew 'pyenv'
+
 brew 'nodenv'
 brew 'node-build'
 brew 'yarn'

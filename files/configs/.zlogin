@@ -11,6 +11,9 @@ unset file;
 # RubyENV loading
 eval "$(rbenv init -)"
 
+# Pyenv loading
+eval "$(pyenv init -)"
+
 # NVM
 export NVM_DIR="${HOME}/.nvm"
 [ -f "${NVM_DIR}/nvm.sh" ] && . "${NVM_DIR}/nvm.sh"  # This loads nvm
