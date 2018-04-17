@@ -27,9 +27,6 @@ brew 'rbenv'
 brew 'ruby-build'
 
 brew 'pyenv'
-
-brew 'nodenv'
-brew 'node-build'
 brew 'yarn'
 
 brew 'fzf'
