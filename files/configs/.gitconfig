@@ -24,8 +24,8 @@
   wip = !git add . && git commit -am 'WIP :construction:'
   stash-all = stash save --include-untracked
   sp = stash pop
-  com = checkout master
-  sem = checkout -
+  master = !git checkout master && git pull
+  back = checkout -
   co = checkout
   tags = tag -l
   branches = branch -a
