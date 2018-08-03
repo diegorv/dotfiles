@@ -6,7 +6,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load @ ~/.oh-my-zsh/themes/ or ~/.oh-my-zsh/custom/themes/
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_MODE='nerdfont-complete'
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs status newline)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status dir rbenv vcs newline)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(git_time_since_commit)
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 
