@@ -44,7 +44,7 @@ alias .6='cd ../../../../../../'
 alias ls='ls -G -h'
 alias la='ls -lA'
 alias ll='ls -FGlahs'
-alias lc='colorls -r -1 -sd'
+alias lc='colorls --gs --sd'
 alias ri='ri -f ansi'
 
 ###############################################################################
