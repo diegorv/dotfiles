@@ -26,3 +26,7 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 
 # QT@5.5
 export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
+
+# PHP@7.0
+export PATH="/usr/local/opt/php@7.0/bin:$PATH"
+export PATH="/usr/local/opt/php@7.0/sbin:$PATH"

@@ -24,3 +24,7 @@ export NVM_DIR="${HOME}/.nvm"
 
 # FZF
 [ -f "${HOME}/.fzf.zsh" ] && . "${HOME}/.fzf.zsh"
+
+# ZSH Plugins
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
