@@ -1278,6 +1278,7 @@ set_default POWERLEVEL9K_RBENV_PROMPT_ALWAYS_SHOW false
 prompt_rbenv() {
   if [ -f Gemfile.lock ]; then
     rails_version=`cat Gemfile.lock | grep -E " +rails \([0-9]+" | sed 's/ *rails (\(.*\))/\1/'`
+    rails_to_show="${rails_version} | "
   fi
 
   if [[ -n "$RBENV_VERSION" ]]; then
@@ -1286,7 +1287,7 @@ prompt_rbenv() {
     local rbenv_version_name="$(rbenv version-name)"
     local rbenv_global="$(rbenv global)"
     if [[ "${rbenv_version_name}" != "${rbenv_global}" || "${POWERLEVEL9K_RBENV_PROMPT_ALWAYS_SHOW}" == "true" ]]; then
-      "$1_prompt_segment" "$0" "$2" "red" "$DEFAULT_COLOR" "${rails_version} | $rbenv_version_name" 'RUBY_ICON'
+      "$1_prompt_segment" "$0" "$2" "red" "$DEFAULT_COLOR" "$rails_to_show $rbenv_version_name" 'RUBY_ICON'
     fi
   fi
 }
@@ -1912,8 +1913,8 @@ local NEWLINE='
 }
 
 zle-keymap-select () {
-	zle reset-prompt
-	zle -R
+  zle reset-prompt
+  zle -R
 }
 
 set_default POWERLEVEL9K_IGNORE_TERM_COLORS false
