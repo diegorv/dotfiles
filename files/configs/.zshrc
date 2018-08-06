@@ -9,6 +9,7 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status dir rbenv vcs newline)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(git_time_since_commit)
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+POWERLEVEL9K_RBENV_PROMPT_ALWAYS_SHOW=true
 
 echo -ne "\033]6;1;bg;red;brightness;18\a"
 echo -ne "\033]6;1;bg;green;brightness;26\a"
