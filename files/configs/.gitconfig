@@ -80,3 +80,6 @@
 
 [github]
   user = diegorv
+
+[pager]
+	branch = false
