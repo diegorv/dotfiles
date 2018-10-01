@@ -32,8 +32,6 @@ brew 'yarn'
 brew 'fzf'
 brew 'autojump'
 
-brew 'phantomjs'
-
 brew 'webp'
 brew 'gifsicle'
 brew 'ffmpeg', args: ['with-fontconfig', 'without-lame', 'without-qtkit', 'without-x264', 'without-xvid']
