@@ -47,25 +47,19 @@ brew 'fontconfig'
 brew 'jpeg'
 brew 'libtiff'
 
-tap 'puma/puma'
-brew 'puma/puma/puma-dev'
-
 brew 'erlang'
 brew 'elixir'
 
-brew 'go'
-
 brew 'postgresql'
+brew 'mysql'
 
 # MAS
 brew 'mas'
 
-mas '1Password', id: 443987910
 mas 'Evernote', id: 406056744
 mas 'Amphetamine', id: 937984704
 mas 'Annotate', id: 918207447
 mas 'Monosnap', id: 540348655
-mas 'Sip', id: 507257563
 mas 'Transmit', id: 403388562
 mas 'Tweetbot', id: 557168941
 mas 'iA Writer', id: 775737590
@@ -74,7 +68,6 @@ mas 'Slack', id: 803453959
 mas 'Moom', id: 419330170
 mas 'Cinch', id: 412529613
 mas 'DaisyDisk', id: 411643860
-mas 'Boom 2', id: 948176063
 mas 'Pocket', id: 568494494
 mas 'Crazy Tomato', id: 1105814268
 
@@ -82,18 +75,14 @@ mas 'Crazy Tomato', id: 1105814268
 tap 'caskroom/cask'
 brew 'brew-cask-completion'
 
-cask 'alfred'
-cask 'dropbox'
+# cask 'alfred'
+# cask 'dropbox'
 cask 'firefox'
-cask 'google-chrome'
-cask 'blisk'
+# cask 'google-chrome'
 cask 'gpgtools'
 cask 'imageoptim'
 cask 'iterm2'
-cask 'istat-menus'
-cask 'bartender'
 cask 'rescuetime'
-cask 'pritunl'
 cask 'dash'
 cask 'postman'
 cask 'tower'
