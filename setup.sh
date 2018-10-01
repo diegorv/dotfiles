@@ -15,7 +15,7 @@ print_in_purple '\nOS X Config Dotfiles - diegorv\n'
 
 # Run installers
 ${DOTFILES_INSTALLER}/osx_update
-${DOTFILES_INSTALLER}/osx_customization
+# ${DOTFILES_INSTALLER}/osx_customization
 
 ${DOTFILES_INSTALLER}/brew
 ${DOTFILES_INSTALLER}/git
